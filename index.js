@@ -36,6 +36,13 @@ formTask.addEventListener("submit", (e) => {
   btnFinish.classList.add("btnFinish");
   btnFinish.textContent = "Finalizada";
 
+  const btnDelete = document.createElement("button");
+  btnDelete.classList.add("btnDelete");
+  btnDelete.textContent = "Excluir";
+  btnDelete.addEventListener("click", () => {
+    itemListTask.remove();
+  });
+
   itemListTask.setAttribute("draggable", "true");
   itemListTask.classList.add("item-list-task");
   containerTitleList.classList.add("container-title-list");
@@ -59,6 +66,7 @@ formTask.addEventListener("submit", (e) => {
   actionsContainer.appendChild(btnNotStarted);
   actionsContainer.appendChild(btnStart);
   actionsContainer.appendChild(btnFinish);
+  actionsContainer.appendChild(btnDelete);
 
   itemListTask.appendChild(containerTitleList);
   itemListTask.appendChild(containerDescriptionList);

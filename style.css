@@ -44,7 +44,6 @@ main {
 }
 .container-input {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   gap: 8px;
   width: 100%;
@@ -232,9 +231,8 @@ main {
 }
 
 .task-actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 4px;
   width: 100%;
 }
@@ -260,6 +258,10 @@ main {
 }
 .btnFinish {
   background-color: #6a8765;
+  color: #fcfcfc;
+}
+.btnDelete {
+  background-color: #ff3e3e;
   color: #fcfcfc;
 }
 
@@ -312,5 +314,8 @@ main {
 @media (max-width: 380px) {
   .task-actions {
     flex-direction: column;
+  }
+  .task-actions {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
