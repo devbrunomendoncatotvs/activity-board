@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quadro de atividades</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Section Form -->
+      <section class="section-form">
+        <h1>Quadro de atividades</h1>
+        <form id="form-task">
+          <div class="container-input">
+            <!-- Input Title -->
+            <div class="input-title">
+              <label for="title-task">Título</label>
+              <input
+                type="text"
+                id="title-task"
+                placeholder="Escreva um título para a atividade"
+                required
+              />
+            </div>
+            <!-- Input Description -->
+            <div class="input-title">
+              <label for="description-task">Descrição</label>
+              <input
+                type="text"
+                id="description-task"
+                placeholder="Escreva uma descrição para a atividade"
+                required
+              />
+            </div>
+          </div>
+          <button>Adicionar atividade</button>
+        </form>
+      </section>
+
+      <!-- Section Resume Activies -->
+      <section class="section-resume-task">
+        <h2>Resumo de atividades</h2>
+        <div class="container-resume-task">
+          <!-- Container One -->
+          <div class="card-remuse-task one">
+            <h3>Não iniciadas</h3>
+            <ul id="content-list-one"></ul>
+          </div>
+          <!-- Container Two -->
+          <div class="card-remuse-task two">
+            <h3>Em andamento</h3>
+            <ul id="content-list-two"></ul>
+          </div>
+          <!-- Container Three -->
+          <div class="card-remuse-task three">
+            <h3>Concluídas</h3>
+            <ul id="content-list-three"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
